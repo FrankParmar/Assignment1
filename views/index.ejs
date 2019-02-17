@@ -1,0 +1,112 @@
+<% include ./partials/header.ejs %>
+
+    <div class="container">
+      <div class="jumbotron">
+        
+        <% if (title == "Home") { %>
+        <h1 class="display-4">Welcome to Express Portfolio Website</h1>
+        <h3>  Choose a job you love, and you will never have to work a day in your life.
+       .</br>
+        </br>  </h3>
+        
+        <i>"“Intelligent people need a fool to lead them. When the team's all a bunch of scientists, it is best to have a peasant lead the way. His way of thinking is different. It's easier to win if you have people seeing things from different perspectives.”"</i>
+      </br></br>
+          <a class="btn btn-primary" href="/About" role="button">About Me</a>
+        <% } %>
+      <!--//////////////////////////////////////////////////////////////////////////////-->
+       <% if (title == "About") { %>
+       <img src="mypic.jpeg" width="210" heigth="260"> 
+         <h2><b><i><u>Name: Frank Parmar</u></b></i><h2>
+         <h4> Recently graduated and looking forward to work as a software developer.
+        Expert in Python, Java, NodeJS, ExpressJS
+         </h4>
+         <h4>College: -Centennial College</h4>
+         <h4>Campus: -Progress Campus</h4>
+         <h4>Student Number: - 300958252</h4>
+         <h4>Below is attached Copies of my resume</h4>
+          <a class="btn btn-primary" href="file.pdf" role="button">Resume</a>
+           <!--//////////////////////////////////////////////////////////////////////////////-->
+        <% } %>
+        <% if (title == "Products") { %>
+        <h1 class="display-4">Here are some of my projects</h1>
+        <h4></br></h4>
+        <h4><b>Project: Car Parking</b></h4>
+        <p>We had developed  a web application where a customer can login to an account
+        and than book a parking spot before reaching the  parking lot. This would avoid the hassels of 
+        the user as the parking spot entrance woud be busy</p>
+        <img src="s1.png" ></br>
+           <h4></br></h4>
+        <h4><b>Project: Online Food Ordering with Swagger</b></h4>
+        <p>we had developed a online food ordering website using swagger and a user can make a request
+        for food ordering, delete a request or update the  order. Thus we implementedd CRUD technologies
+        </p>
+        <img src="s2.png" ></br>
+          <h4></br></h4>
+        <h4><b>Project: Easy Books</b></h4>
+        <p>Here we developed and Android App where the users could easily sell and buy the books.
+        the seller would keep images of the website and the buyer would see the images and would buy the 
+        book if he wants. The buyer would buy thye book at half the original price.
+        </p>
+        <img src="s3.png" >
+          <h4></br></h4>
+        <% } %>
+      <!--////////////////////////////////////////////////////////////////////////// -->
+       <% if (title == "Services") { %>
+        <h1 class="display-4"><b>These are the Technologies with which i work</b></h1>
+          <h4></br></h4>
+          <table style="width:100%">
+  <tr>
+    <th>texhnologies</th>
+    <th>Images</th> 
+  </tr>
+  <tr>
+    <td>C#</td>
+    <td><img src="ser1c.png" width="60" heigth="60"></td> 
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td><img src="ser2p.png" width="60" heigth="60"></td> 
+  </tr>
+  <tr>
+    <td>NodeJs</td>
+    <td><img src="ser3n.png" width="60" heigth="60"></td> 
+  </tr>
+  <tr>
+    <td>ExpressJS</td>
+    <td><img src="ser4e.png" width="60" heigth="60"></td> 
+  </tr>
+  <tr>
+    <td>MongoDb</td>
+    <td><img src="ser5m.png" width="60" heigth="60"></td> 
+  </tr>
+</table>
+        <% } %>
+       <!--//////////////////////////////////////////////////////////////////////////////-->
+       <% if (title == "Contact") { %>
+       <div class="panel panel-primary" style="border: 2px solid Green">
+          <div class="panel-body">
+        <h1 class="display-4">My Contact Information</h1>
+<b>Phone Number: - (647) 778-8841</b></br>
+<b>Email: parmarfrank@gmail.com</b></br>
+<b>LinkedIn: <a href="https://www.linkedin.com/in/frankparmar/">Click Here</a></b></br>
+<b>GitHub: <a href="https://github.com/FrankParmar">Click Here</a></b>
+</br>
+         </div>
+        </div></br>
+         <div class="panel panel-primary" style="border: 2px solid blue">
+         <div class="panel-body">
+      
+        FirstName: <input type="text" name="fname"><br></br>
+        LasstName: <input type="text" name="fname"><br></br>
+        Contact Number: <input type="text" name="fname"><br></br>
+        Email Address:<input type="text" name="fname"><br></br>
+        Message: <textarea type="text" placeholder="Enter a message" name="message" required></textarea>
+   
+        </div>
+          </div>
+        <a role="button" type="submit" class="btn btn-primary" href="/">Submit</a>
+        <% } %>
+      </div>
+    </div>
+
+<% include ./partials/footer.ejs %>
